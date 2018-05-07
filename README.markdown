@@ -1,4 +1,4 @@
-# Study, Practice and Exercise with Scala
+# Study, Practice and Exercises with Scala
 
 ## Akka
 
