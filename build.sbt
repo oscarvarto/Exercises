@@ -2,7 +2,7 @@ name := "Exercises"
 
 version := "0.1"
 
-scalaVersion := "2.12.4"
+scalaVersion := "2.12.6"
 
 resolvers += Resolver.sonatypeRepo("releases")
 
@@ -63,7 +63,7 @@ scalacOptions ++= Seq(
 
 /* Macro-related stuff */
 
-addCompilerPlugin("org.scalameta" % "paradise" % "3.0.0-M11" cross CrossVersion.full)
+addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full)
 
 scalacOptions += "-Xplugin-require:macroparadise"
 scalacOptions in(Compile, console) ~= (_ filterNot (_ contains "paradise")) // macroparadise plugin doesn't work in repl yet.
