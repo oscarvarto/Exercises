@@ -153,5 +153,6 @@ libraryDependencies ++= Seq(
 libraryDependencies ++= Seq(
   "org.typelevel" %% "cats-testkit" % catsVersion, // lib for writing tests for type class instances using laws
   "org.scalatest" %% "scalatest" % "3.0.5",
-  "com.typesafe.akka" %% "akka-testkit" % "2.5.12"
+  "com.typesafe.akka" %% "akka-testkit" % "2.5.12",
+  "org.scalacheck" %% "scalacheck" % "1.14.0"
 ).map(_ % Test withJavadoc())
