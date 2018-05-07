@@ -99,7 +99,8 @@ libraryDependencies ++= Seq(
   "io.frees" %% "iota-core" % "0.3.6",
   "com.roundeights" %% "hasher" % "1.2.0",
   "org.scala-lang.modules" %% "scala-xml" % "1.1.0",
-  "com.typesafe.akka" %% "akka-http" % "10.1.1"
+  "com.typesafe.akka" %% "akka-http" % "10.1.1",
+  "org.scalameta" %% "scalameta" % "3.7.3"
 ).map(_ withJavadoc())
 
 val circeVersion = "0.9.3"
