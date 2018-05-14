@@ -4,9 +4,6 @@
 
 ### akka-stream 
 
-* Streaming from a file: Done
-* Streaming from MySQL
-
 ## Scalaz
 
 ## Cats
