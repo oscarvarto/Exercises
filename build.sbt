@@ -95,12 +95,14 @@ libraryDependencies ++= Seq(
 libraryDependencies ++= Seq(
   "org.typelevel" %% "cats-effect" % "1.0.0-RC",
   "com.github.mpilquist" %% "simulacrum" % "0.12.0",
+  "org.typelevel" %% "spire" % "0.15.0",
   "org.atnos" %% "eff" % "5.1.0",
   "io.frees" %% "iota-core" % "0.3.6",
   "com.roundeights" %% "hasher" % "1.2.0",
   "org.scala-lang.modules" %% "scala-xml" % "1.1.0",
   "com.typesafe.akka" %% "akka-http" % "10.1.1",
-  "org.scalameta" %% "scalameta" % "3.7.3"
+  "org.scalameta" %% "scalameta" % "3.7.3",
+  "com.beachape" %% "enumeratum" % "1.5.13"
 ).map(_ withJavadoc())
 
 val circeVersion = "0.9.3"
@@ -118,7 +120,7 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-persistence"
 ).map(_ % akkaVersion withJavadoc())
 
-val alpakkaVersion = "0.18"
+val alpakkaVersion = "0.19"
 libraryDependencies ++= Seq(
   // See
   // - https://developer.lightbend.com/docs/alpakka/current/examples/csv-samples.html
@@ -130,7 +132,7 @@ libraryDependencies ++= Seq(
 ).map(_ % alpakkaVersion withJavadoc())
 
 // scalaz
-val scalazVersion = "7.2.22"
+val scalazVersion = "7.3.0-M23"
 libraryDependencies ++= Seq(
   "org.scalaz" %% "scalaz-core",
   "org.scalaz" %% "scalaz-effect",
