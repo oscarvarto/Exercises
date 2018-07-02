@@ -132,7 +132,7 @@ libraryDependencies ++= Seq(
 ).map(_ % alpakkaVersion withJavadoc())
 
 // scalaz
-val scalazVersion = "7.3.0-M23"
+val scalazVersion = "7.3.0-M24"
 libraryDependencies ++= Seq(
   "org.scalaz" %% "scalaz-core",
   "org.scalaz" %% "scalaz-effect",

@@ -13,7 +13,7 @@ import io.circe.generic.semiauto._
 import java.{util => ju}
 import java.lang.{Math => jlm}
 
-import io.github.oscarvarto.scalazexercises.DayOfWeek1
+import cats.implicits._
 import iota.Cop.Inject
 
 object Definitions {
@@ -79,5 +79,15 @@ object Solution extends App {
 
   val x = decode[V]("1")(decV[Int])
   println(x)
+
+  val x: Option[Int] = 3.some
+  val y: Option[Int] = none
+
+  val z: Option[Int] = x |+| y
+  println(z)
   */
+
+  import io.github.oscarvarto.scalazexercises.Problem1Z._
+  //println(x)
+  println(res)
 }

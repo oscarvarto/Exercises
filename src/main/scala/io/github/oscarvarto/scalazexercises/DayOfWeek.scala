@@ -1,12 +1,12 @@
 package io.github.oscarvarto.scalazexercises
 
 import java.{time => jt}
-import scalaz.{Order, Ordering}
-import scalaz.syntax.std.option._
+import scalaz._
+import Scalaz._
 
-object DayOfWeek {
+object DOfWeek {
 
-  class DayOfWeek private[this](val jtDay: jt.DayOfWeek) extends AnyVal {
+  class DayOfWeek private[DOfWeek](val jtDay: jt.DayOfWeek) extends AnyVal {
     override def toString: String = jtDay.name()
   }
 

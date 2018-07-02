@@ -2,7 +2,7 @@ package io.github.oscarvarto.scalazexercises
 
 import scalaz._
 import Scalaz._
-import DayOfWeek._
+import DOfWeek._
 
 object TypeclassUsageZ {
   // Eq typeclass usage
@@ -10,7 +10,7 @@ object TypeclassUsageZ {
 
   val x2: Boolean = (1 -> 2) =/= (1 -> 1)
 
-  val x3: Boolean = DayOfWeek.Mon === DayOfWeek.Fri
+  val x3: Boolean = Mon === Fri
 
-  val x4: IList[DayOfWeek] = DayOfWeek.Mon |-> DayOfWeek.Fri
+  val x4: IList[DayOfWeek] = Mon |-> Fri
 }
